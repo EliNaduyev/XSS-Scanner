@@ -22,5 +22,7 @@ and after that just for run the server you need:
 npm start
 ```
 
+![](pictures/xss_scanner_pic.png)
+
 
 

@@ -10,7 +10,7 @@ The scanner is trying to inject variety of scripts for better results.
 
 ### Prerequisites
 
-for able to be run the scanner you need to have NodeJS installed on your computer and the browser need to include Cors extension
+For able to be run the scanner you need to have NodeJS installed on your computer and the browser need to include Cors extension
 If both of these things are installed, all you have to do in the terminal is:
 
 ```

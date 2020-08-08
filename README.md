@@ -21,12 +21,6 @@ and after that just for run the server you need:
 ```
 npm start
 ```
+After server is running just open the scanner.html file
 
 ![](pictures/xss_scanner_pic.png)
-
-
-```
-After server is running just open the scanner.html file.
-```
-
-

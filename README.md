@@ -25,4 +25,8 @@ npm start
 ![](pictures/xss_scanner_pic.png)
 
 
+```
+After server is running just open the scanner.html file.
+```
+
 

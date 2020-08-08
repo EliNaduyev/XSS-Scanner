@@ -1,11 +1,19 @@
 # XSS Scanner
 
-Following OWASP TOP 10 (the top ten most critical web application security risk) I decided to build an XSS Scanner.
-In the Frontend I used vanilla javascript and in the Backend I used NodeJS and Express for the server and Puppeteer for automation. 
-Puppeteer is an open source library developed by Google that was built in purpose of automating and simplifying tests and development.
+Cross-Site Scripting (XSS) is one of the most well known web application vulnerabilities. It even has a dedicated chapter in the OWASP Top 10 project and it is a highly chased vulnerability in bug bounty programs.
 
-The scanner getting link from the user and scan the website for XSS vulnerability by injecting malicious script and check if the website is running the script.
-The scanner is trying to inject variety of scripts for better results.   
+The scanner gets a link from the user and scan the website for XSS vulnerability by injecting malicious scripts at the input place. The injection happens in headless browser named Chromium and controlled by Puppeteer automation.
+
+It works in two steps:
+1. Find the target: In this first step, the tool tries to identify all the places at the page including injectable parameters in forms, URLs, headers, etc.
+2. Test for XSS: For each place discovered in the previous step, the scanner will try to detect if the parameters are vulnerable to Cross-Site Scripting. The tool injects a piece of JavaScript code, including some special HTML characters (>, <, ", ') and it will try to see if they are returned in the response page without sanitization.
+If the tool detects at least one vulnerability, it will return that the website have XSS vulnerability.
+
+### Technologies
+ * Puppeteer
+ * Javascript
+ * NodeJS
+ * Express
 
 
 ### Prerequisites
